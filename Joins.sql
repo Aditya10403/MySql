@@ -59,11 +59,11 @@ VALUES(1, 1, 'A', '2021-04-21', 3),
 
 -- INNER JOIN
 -- Enlist All the employee's ID's, names along with the Project allocated to them.
-SELECT E.ID, E.FNAME, E.LNAME, P. ID, P.NAME FROM EMPLOYEE AS E
+SELECT E.ID, E.FNAME, E.LNAME, P.ID, P.NAME FROM EMPLOYEE AS E
 INNER JOIN PROJECT AS P ON E.ID = P.EMP_ID;
 
 -- W/O JOIN
-SELECT E.ID, E.FNAME, E.LNAME, P. ID, P.NAME FROM EMPLOYEE AS E,
+SELECT E.ID, E.FNAME, E.LNAME, P.ID, P.NAME FROM EMPLOYEE AS E,
 PROJECT AS P WHERE E.ID = P.EMP_ID;
 
 -- Fetch out all the employee's ID's and their contact detail who have been
